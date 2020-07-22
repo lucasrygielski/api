@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="widht=device-width, initial-scale=1.0">
+    <title>Chaldea</title>
+</head>
+<body>
+    <h1>Inscription</h1>
+    <h2>Entrer vos informations</h2>
+    <form action="/ma-page-de-traitement" method="post">
+        <div>
+            <lable for="Nom">Nom :</lable>
+            <input type="text" id="Nom" name="user_Nom">
+        </div>
+        <div>
+            <lable for="Prénom">Prénom :</lable>
+            <input type="text" id="Prénom" name="user_Prénom">
+        </div>
+        <div>
+            <span>Sexe :</span>
+            
+            <input type="radio" name="sexe" value="femme" id="fem">
+            <label for="fem">femme</label>     
+            
+            <input type="radio" name="sexe" value="homme" id="hom">
+            <label for="hom">homme</label>
+            
+        </div>
+        <div>
+            <lable for="Date de naissance">Date de naissance :</lable>
+            <input type="date" id="Date" name="user_Date">
+        </div>
+        <div>
+            <lable for="mail">Mail :</lable>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <lable for="pseudo">Pseudo :</lable>
+            <input type="text" id="pseudo" name="user_pseudo">
+        </div>
+        <div>
+            <lable for="mot de passe">Mot de passe :</lable>
+            <input type="password" id="password" name="user_password">
+        </div>
+        <div class="button">
+            <button type="submit">Confirmer l'inscription</button>
+        </div>
+    </form>
+</body>
+</html>
