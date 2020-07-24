@@ -1,6 +1,12 @@
-const register =() => {
+const send = (event) => {
+    event.preventDefault();
     
-}
 
-let object = document.querySelector('#enregistrement').addEventListener('submit', register)
-console.log(object)
+    console.log(event);
+
+    for (elt of event.target) {
+        console.log(elt.value)
+    }
+
+}
+document.querySelector("#formInscription").addEventListener('submit', send);
