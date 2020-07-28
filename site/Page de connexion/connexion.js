@@ -1,9 +1,13 @@
-const send = (event) => {
-    event.preventDefault();
-    /*alert('je suis dans la fonction send');*/
-
-    console.log(event.target[0].value);
-    console.log(event);
-
+const connexion = (event) => {
+    event.preventDefault()
+    const loginInfo = {}
+    const form = event.target
+    for (input of form) {
+        if (input.id !== "") {
+            loginInfo[input.id] = input.value
+        }
+    }
+    console.log(loginInfo)
 }
-document.querySelector("#formConnexion").addEventListener('submit', send);
+
+document.querySelector('#loginForm').addEventListener('submit', connexion)
