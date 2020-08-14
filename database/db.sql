@@ -1,0 +1,11 @@
+USE utilisateurs;
+CREATE TABLE utilisateur (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nom VARCHAR(100) NOT NULL,
+    Prenom VARCHAR(100) NOT NULL,
+    Naissance VARCHAR(9) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Pseudo VARCHAR(100) NOT NULL,
+    Password VARCHAR(100) NOT NULL,
+    done TINYINT(1)
+);

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    ChaldeaDb:
+        image: mysql
+        environment: 
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: Utilisateurs
+        ports:
+            - "3306:3306"
