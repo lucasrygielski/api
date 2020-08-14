@@ -8,3 +8,15 @@ services:
             MYSQL_DATABASE: Utilisateurs
         ports:
             - "3306:3306"
+    
+    
+    site_service:
+        build:
+            context: ./site_service
+            dockerfile: dockerfile
+        environment:
+            FLASK_ENV: development
+            FLASK_APP: site.py
+
+        ports:
+            - '5000:5000'
