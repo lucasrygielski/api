@@ -18,3 +18,5 @@ const send = (event) => {
 
 }
 document.querySelector("#formRecherche").addEventListener('submit', send);
+
+fetch(192.168.99.101:3306).then(resp=resp.json()).then(json=())
