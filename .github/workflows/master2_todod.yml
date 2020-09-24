@@ -32,4 +32,4 @@ jobs:
         app-name: 'todod'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_f4585cf20cf74e26bd0aabd2056a0668 }}
-        package: .
+        package: /api/todo
